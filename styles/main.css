@@ -2,7 +2,8 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
-  flex-flow: column; }
+  flex-direction: column;
+  font-family: 'Caveat', cursive; }
 
 nav {
   flex-basis: 100%;
@@ -18,9 +19,11 @@ main {
   color: white; }
   #hero img {
     width: 100vw;
-    height: 200px;
+    height: 500px;
     z-index: -1;
-    object-fit: cover; }
+    display: block;
+    object-fit: cover;
+    filter: brightness(50%); }
   #hero div {
     margin: 0px;
     padding: 0px;
@@ -28,6 +31,25 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  #hero h1 {
+    font-size: 60pt;
+    font-weight: bold;
+    margin: auto 0vh;
+    word-wrap: nowrap; }
+  #hero p {
+    font-size: 24pt;
+    font-weight: bold;
+    margin: auto 0vh; }
+
+#quotes {
+  background: #597D35; }
+  #quotes ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
+  #quotes li {
+    font-size: 16pt;
+    margin: auto 10px; }
 
 footer {
   flex-basis: 100%; }
