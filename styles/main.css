@@ -68,7 +68,7 @@ main {
     margin: auto 0vh; }
 
 #quotes {
-  background: lightblue;
+  background: white;
   text-align: center; }
   #quotes h2 {
     margin: 0px 0px 10px 0px;
@@ -84,7 +84,11 @@ main {
     font-size: 2em;
     color: black;
     margin: auto 10px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    transition: transform 2s; }
+  #quotes li:hover {
+    background-color: lightblue;
+    transform: scale(1.5); }
 
 footer {
   flex-basis: 100%;
@@ -93,7 +97,6 @@ footer {
   left: 0;
   bottom: 0;
   color: white;
-  position: fixed;
   width: 100%;
   padding: 20px 0; }
   footer p {

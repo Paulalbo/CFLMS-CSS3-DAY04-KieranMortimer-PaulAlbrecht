@@ -96,7 +96,7 @@ main {
 }
 
 #quotes {
-	background: $accentColour;
+	background: white;
 	text-align: center;
 	
 	h2 {
@@ -118,7 +118,14 @@ main {
 		color: $textColourDark;
 		margin: auto 10px;
 		padding-bottom: 25px;
+		transition: transform 2s;
 	}
+
+	li:hover {
+		background-color: lightblue;
+		transform: scale(1.5);
+	}
+
 }
 
 
@@ -134,7 +141,6 @@ footer {
 	left: 0;
 	bottom: 0;
 	color: white;
-	position: fixed;
 	width: 100%;
 	padding: 20px 0;
 
