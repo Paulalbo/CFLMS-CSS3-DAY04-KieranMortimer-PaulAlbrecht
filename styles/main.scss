@@ -118,4 +118,28 @@ main {
 
 footer {
 	flex-basis: 100%;
+	background-color: lightblue;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	color: white;
+	position: fixed;
+	width: 100%;
+	padding: 20px 0;
+
+	p {
+		font-size: 1.5em;
+	}
+
+	img {
+		width: 8vw;
+	}
+
+	#bobspin {
+		transition: transform 2s;
+	}
+
+	#bobspin:hover {
+		transform: rotateZ(360deg);
+	}
 }
