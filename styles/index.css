@@ -38,6 +38,24 @@ nav {
 main {
   flex-basis: 100%; }
 
+footer {
+  flex-basis: 100%;
+  background-color: lightblue;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  padding: 20px 0; }
+  footer p {
+    font-size: 1.5em; }
+  footer img {
+    width: 8vw; }
+  footer #bobspin {
+    transition: transform 2s; }
+  footer #bobspin:hover {
+    transform: rotateZ(360deg); }
+
 #hero {
   text-align: center;
   color: white; }
@@ -90,22 +108,4 @@ main {
     background-color: lightblue;
     transform: scale(1.5); }
 
-footer {
-  flex-basis: 100%;
-  background-color: lightblue;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  color: white;
-  width: 100%;
-  padding: 20px 0; }
-  footer p {
-    font-size: 1.5em; }
-  footer img {
-    width: 8vw; }
-  footer #bobspin {
-    transition: transform 2s; }
-  footer #bobspin:hover {
-    transform: rotateZ(360deg); }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */

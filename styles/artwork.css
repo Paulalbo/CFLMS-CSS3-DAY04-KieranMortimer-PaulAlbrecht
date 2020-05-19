@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Caveat', cursive; }
+
+/* -- Nav START --*/
+nav {
+  display: flex;
+  padding: 5px;
+  flex-basis: 100%;
+  background: lightblue; }
+  nav img {
+    height: 2em; }
+  nav #logo {
+    padding: 0px;
+    margin: 0 10%; }
+  nav ul {
+    display: flex;
+    margin: 1% 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    align-content: center; }
+  nav a:hover {
+    background: white;
+    color: black;
+    border-radius: 25px; }
+  nav a {
+    display: block;
+    color: white;
+    font-size: 2em;
+    padding: 6px 12px;
+    text-decoration: none; }
+
+/* -- Nav END --*/
+main {
+  flex-basis: 100%; }
+
+footer {
+  flex-basis: 100%;
+  background-color: lightblue;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  padding: 20px 0; }
+  footer p {
+    font-size: 1.5em; }
+  footer img {
+    width: 8vw; }
+  footer #bobspin {
+    transition: transform 2s; }
+  footer #bobspin:hover {
+    transform: rotateZ(360deg); }
+
+/*# sourceMappingURL=artwork.css.map */
