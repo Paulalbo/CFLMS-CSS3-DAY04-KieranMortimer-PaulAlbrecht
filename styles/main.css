@@ -30,7 +30,7 @@ nav {
   nav a {
     display: block;
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 6px 12px;
     text-decoration: none; }
 
@@ -58,24 +58,33 @@ main {
     left: 50%;
     transform: translate(-50%, -50%); }
   #hero h1 {
-    font-size: 60pt;
+    font-size: 4em;
     font-weight: bold;
     margin: auto 0vh;
     word-wrap: nowrap; }
   #hero p {
-    font-size: 24pt;
+    font-size: 2em;
     font-weight: bold;
     margin: auto 0vh; }
 
 #quotes {
-  background: #597D35; }
+  background: lightblue;
+  text-align: center; }
+  #quotes h2 {
+    margin: 0px 0px 10px 0px;
+    padding: 30px 0px 0px 0px;
+    font-size: 50pt;
+    font-weight: bold;
+    color: black; }
   #quotes ul {
     list-style-type: none;
     margin: 0px;
-    padding: 0px; }
+    padding: 30px; }
   #quotes li {
-    font-size: 16pt;
-    margin: auto 10px; }
+    font-size: 2em;
+    color: black;
+    margin: auto 10px;
+    padding-bottom: 25px; }
 
 footer {
   flex-basis: 100%; }

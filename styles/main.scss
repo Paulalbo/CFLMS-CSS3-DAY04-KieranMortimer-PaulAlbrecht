@@ -1,4 +1,7 @@
-$fontSize: 16pt;
+$fontSize: 2em;
+$accentColour: lightblue;
+$textColour: white;
+$textColourDark: black;
 
 body {
 	margin: 0px;
@@ -6,50 +9,48 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Caveat', cursive;
-
 }
-/* -- Nav START --*/
 
+/* -- Nav START --*/
 nav {
 	display: flex;
 	padding: 5px;
 	flex-basis: 100%;
-	background: lightblue;
+	background: $accentColour;
 
- img {
- 	height: 2em;
- }
+ 	img {
+ 		height: 2em;
+ 	}
 
- #logo {
- 	padding: 0px;
- 	margin: 0 10%;
- }
+ 	#logo {
+ 		padding: 0px;
+ 		margin: 0 10%;
+ 	}
 
- ul {
- 	display: flex;
-    margin: 1% 0;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-	align-content: center;
- }
+ 	ul {
+ 		display: flex;
+    	margin: 1% 0;
+   		padding: 0;
+   		list-style: none;
+    	align-items: center;
+		align-content: center;
+ 	}
 
 
- a:hover {
-	background: white;
-	color: black;
-	border-radius: 25px;
+ 	a:hover {
+		background: white;
+		color: black;
+		border-radius: 25px;
+	}
+
+ 	a {
+ 		display: block;
+ 		color: white;
+ 		font-size: $fontSize;
+    	padding: 6px 12px;
+    	text-decoration: none;
+ 	}
 }
-
- a {
- 	display: block;
- 	color: white;
- 	font-size: 1.5em;
-    padding: 6px 12px;
-    text-decoration: none;
- }
-}
-
 /* -- Nav END --*/
 
 main {
@@ -81,32 +82,42 @@ main {
 	}
 
 	h1 {
-		font-size: 60pt;
+		font-size: 4em;
 		font-weight: bold;
 		margin: auto 0vh;
 		word-wrap: nowrap;
 	}
 
 	p {
-		font-size: 24pt;
+		font-size: $fontSize;
 		font-weight: bold;
 		margin: auto 0vh;
 	}
 }
 
 #quotes {
-	background: #597D35;
+	background: $accentColour;
+	text-align: center;
+	
+	h2 {
+		margin: 0px 0px 10px 0px;
+		padding: 30px 0px 0px 0px;
+		font-size: 50pt;
+		font-weight: bold;
+		color: $textColourDark;
+	}
 
 	ul {
 		list-style-type: none;
 		margin: 0px;
-		padding: 0px;
+		padding: 30px;
 	}
 
 	li {
 		font-size: $fontSize;
+		color: $textColourDark;
 		margin: auto 10px;
-
+		padding-bottom: 25px;
 	}
 }
 
