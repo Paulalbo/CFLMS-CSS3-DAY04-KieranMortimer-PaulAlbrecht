@@ -1,28 +1,85 @@
 @import "main";
 
-.photo-album {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	align-content: flex-start;
-	margin: 5% 15%;
+/* Mobile */
+@media screen and (max-width: 480px) {
+	   .photo-album {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		margin: 5% 15%;
 
-	.photo {
-  		align-self: stretch;
-  		width: 30%;
-  		margin: 1%;
+		.photo {
+	  		align-self: stretch;
+	  		width: 100%;
+	  		margin: 1%;
+			}
+
+		.photo:hover {
+			filter: brightness(50%);
+			}
+
+			img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+			}
+	} 
+}
+
+/* Normal */
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+	    .photo-album {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		align-content: flex-start;
+		margin: 5% 15%;
+
+		.photo {
+	  		align-self: stretch;
+	  		width: 30%;
+	  		margin: 1%;
+			}
+
+		.photo:hover {
+			filter: brightness(50%);
+			}
+
+			img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+			}
+	}
+}
+
+/* HDpi */
+@media screen and (min-width:1201px) {
+	    .photo-album {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin: 5% 15%;
+
+		.photo {
+	  		align-self: stretch;
+	  		width: 15%;
+	  		margin: 1%;
+			}
+
+		.photo:hover {
+			filter: brightness(50%);
 		}
-
-	.photo:hover {
-		filter: brightness(50%);
-		}
-
 
 		img {
 			width: 100%;
 			height: 250px;
 			object-fit: cover;
 		}
+	}
 }
+
+
 
