@@ -3,7 +3,7 @@ body {
 	padding: 0px;
 	display: flex;
 	flex-flow: column;
-	
+
 }
 /* -- Nav START --*/
 
@@ -52,6 +52,33 @@ nav {
 main {
 	flex-basis: 100%;
 }
+
+#hero {
+	width: 100vw;
+	position: relative;
+	text-align: center;
+	color: white;
+
+	img {
+		width: 100vw;
+		height: 200px;
+		z-index: -1;
+		object-fit: cover;
+	}
+
+	div {
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+}
+
+
+
+
 
 footer {
 	flex-basis: 100%;
