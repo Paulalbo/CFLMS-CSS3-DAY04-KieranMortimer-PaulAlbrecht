@@ -1,3 +1,20 @@
-main {
+body {
+	margin: 0px;
+	padding: 0px;
 	display: flex;
+	flex-flow: column;
+	
+}
+
+nav {
+	flex-basis: 100%;
+	background: lightblue;
+}
+
+main {
+	flex-basis: 100%;
+}
+
+footer {
+	flex-basis: 100%;
 }
